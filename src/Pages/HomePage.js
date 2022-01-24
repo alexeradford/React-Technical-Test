@@ -35,7 +35,7 @@ const RepeatButton = styled.button`
     outline: none;
     border: none;
     background: none;
-    color: #61DAFB;
+    color: #22a7f0;
     font-weight: bold;
     font-size: 18pt;
     display: flex;
@@ -45,7 +45,7 @@ const RepeatButton = styled.button`
     cursor: pointer;
 
     :hover {
-        color: #6FFAFB;
+        color: #22a7f0;
     }
 `
 const HomePage = (props) => {
@@ -58,11 +58,11 @@ const HomePage = (props) => {
     const EasingComponent = () => {
         const { color, rotateX } = useSpring({
             from: {
-                color: '#46e891',
+                color: "#013243",
                 rotateX: 0,
             },
             to: {
-                color: '#277ef4',
+                color: "#59abe3",
                 rotateX: 225,
             },
             config: {

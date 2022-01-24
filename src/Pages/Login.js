@@ -7,6 +7,7 @@ import {FaArrowRight} from "react-icons/fa"
 import * as yup from 'yup'
 import { useState } from "react";
 import { useNavigate } from "react-router";
+import propTypes from "prop-types";
 
 const Container = styled.div`
     display: flex;
@@ -70,7 +71,7 @@ const StayLoggedInCheckbox = styled.input`
 `
 
 
-const LoginPage = (props) => {
+const LoginPage = ({signIn}) => {
 
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
@@ -91,7 +92,7 @@ const LoginPage = (props) => {
         })
         .then(res => {
             if(res) {
-                navigate("/home")
+                signIn()
             }
         })
     }
