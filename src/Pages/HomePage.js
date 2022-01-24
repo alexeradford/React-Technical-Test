@@ -63,7 +63,7 @@ const HomePage = (props) => {
             },
             to: {
                 color: "#59abe3",
-                rotateX: 225,
+                rotateX: 360,
             },
             config: {
                 duration: 2000,

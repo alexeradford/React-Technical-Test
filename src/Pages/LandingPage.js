@@ -42,7 +42,7 @@ const ButtonIcon = styled(FaArrowRight)`
     padding-left: 10pt;
 `
 
-const LoginPage = (props) => {
+const LoginPage = () => {
 
     const navigate = useNavigate()
 

@@ -40,6 +40,7 @@ const Title = styled.h1`
     font-size: 32pt;
     text-align: center;
     margin-bottom: 25px;
+    margin-top: 25px;
 `
 
 const Subtitle = styled.p`
@@ -65,23 +66,22 @@ const CheckboxContainer = styled.label`
     color: gray;
     font-size: 10pt;
     font-weight: 600;
+    margin-bottom: 25px;
 `
 const StayLoggedInCheckbox = styled.input`
     margin-right: 10px;
 `
 
-
 const LoginPage = ({signIn}) => {
 
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
-    
-    const navigate = useNavigate()
 
     let schema = yup.object().shape({
         email: yup.string().email().required(),
         password: yup.string().required()
       });
+    
     
     function onLogIn(event) {
         event.preventDefault();
@@ -101,7 +101,6 @@ const LoginPage = ({signIn}) => {
         } else {
             alert("Email or password is incorrect.")
         }
-    
     }
 
     return (

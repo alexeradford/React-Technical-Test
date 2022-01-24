@@ -12,7 +12,7 @@ Install all necessary dependencies by running `npm install` from the root direct
 
 ## Running The Project
 
-In order to run the project, use the command `npm start`  from the root directory of the project , then open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+In order to run the project, use the command `npm start`  from the root directory of the project, then open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### Authentication
 Use the following (highly secure) credentials to log into the website.
