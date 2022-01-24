@@ -85,16 +85,23 @@ const LoginPage = ({signIn}) => {
     
     function onLogIn(event) {
         event.preventDefault();
+
+        if(email === "user@test.ca" && password === "password") {
+            schema.isValid({
+                email: email,
+                password: password
+            })
+            .then(res => {
+                if(res) {
+                    signIn()
+                } else {
+                    alert("Please check to make sure your credentials are valid.")
+                }
+            })
+        } else {
+            alert("Email or password is incorrect.")
+        }
     
-        schema.isValid({
-            email: email,
-            password: password
-        })
-        .then(res => {
-            if(res) {
-                signIn()
-            }
-        })
     }
 
     return (
